@@ -4,4 +4,4 @@ RUN apk update --no-cache && apk add gettext bash
 
 COPY task.sh /task.sh
 
-CMD ["sh", "/task.sh"]
+ENTRYPOINT ["/task.sh"]
