@@ -1,0 +1,18 @@
+name: Build with Maven
+description: Builds project with Maven
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+inputs:
+    CONCOURSE_TEAM:
+        description: the team this build is for (helps with credhub path)
+        required: true
+    CREDHUB_SECRET:
+        description: credhub secret
+        required: true
+    CREDHUB_SERVER:
+        description: credhub server path
+        required: true
+    CREDHUB_CLIENT:
+        description: credhub client (username)
+        required: true
