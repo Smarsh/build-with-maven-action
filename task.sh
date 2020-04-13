@@ -12,7 +12,7 @@ ls -l
 
 ls ../../ -l
 
-envsubst < settings.xml > temp.xml
+envsubst < ../../settings.xml > temp.xml
 
 rm settings.xml
 
