@@ -9,6 +9,8 @@ ls -l
 
 ls ../ -l
 
+ls ../../ -l
+
 envsubst < ../../_actions/smarsh/build-with-maven-action/development/settings.xml > temp.xml
 
 rm settings.xml
