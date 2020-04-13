@@ -10,9 +10,7 @@ echo $PWD
 
 ls -l
 
-ls ../workflow -l
-ls ../workspace -l
-ls ../home -l 
+ls ../../ -l
 
 envsubst < settings.xml > temp.xml
 
