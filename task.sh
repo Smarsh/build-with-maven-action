@@ -14,7 +14,7 @@ ls ../workflow -l
 ls ../workspace -l
 ls ../home -l 
 
-envsubst < ../../_actions/smarsh/build-with-maven-action/development/settings.xml > temp.xml
+envsubst < settings.xml > temp.xml
 
 rm settings.xml
 
