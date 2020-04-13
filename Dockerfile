@@ -6,7 +6,7 @@ COPY credhub /usr/bin/
 
 RUN chmod +x /usr/bin/credhub
 
-COPY settings.xml .
+COPY settings.xml /settings.xml
 
 COPY task.sh /task.sh
 
