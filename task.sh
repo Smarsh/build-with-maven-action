@@ -9,4 +9,5 @@ envsubst < ../../settings.xml > temp.xml
 
 mv temp.xml settings.xml
 
+export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=128m"
 mvn clean test -s settings.xml
