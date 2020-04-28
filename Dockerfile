@@ -11,3 +11,5 @@ COPY settings.xml /settings.xml
 COPY task.sh /task.sh
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+ENTRYPOINT [ "/task.sh" ]
