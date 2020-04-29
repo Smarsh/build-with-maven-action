@@ -8,5 +8,3 @@ export ARTIFACTORY_PASSWORD="$(credhub get -q -n /concourse/${CONCOURSE_TEAM}/ar
 envsubst < ../../settings.xml > temp.xml
 
 mv temp.xml settings.xml
-
-mvn clean test -s settings.xml
