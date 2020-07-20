@@ -9,18 +9,18 @@
   <servers>
     <server>
       <id>releases.repository</id>
-      <username>ARTIFACTORY_USERNAME</username>
-      <password>ARTIFACTORY_PASSWORD</password>
+      <username>$ARTIFACTORY_USERNAME</username>
+      <password>$ARTIFACTORY_PASSWORD</password>
     </server>
     <server>
       <id>release-candidate.repository</id>
-      <username>ARTIFACTORY_USERNAME</username>
-      <password>ARTIFACTORY_PASSWORD</password>
+      <username>$ARTIFACTORY_USERNAME</username>
+      <password>$ARTIFACTORY_PASSWORD</password>
     </server>
     <server>
       <id>smarsh-artifactory</id>
-      <username>ARTIFACTORY_USERNAME</username>
-      <password>ARTIFACTORY_PASSWORD</password>
+      <username>$ARTIFACTORY_USERNAME</username>
+      <password>$ARTIFACTORY_PASSWORD</password>
     </server>
   </servers>
   <mirrors>
