@@ -9,18 +9,18 @@
   <servers>
     <server>
       <id>releases.repository</id>
-      <username>$ARTIFACTORY_USERNAME</username>
-      <password>$ARTIFACTORY_PASSWORD</password>
+      <username>ARTIFACTORY_USERNAME</username>
+      <password>ARTIFACTORY_PASSWORD</password>
     </server>
     <server>
-      <id>snapshots.repository</id>
-      <username>$ARTIFACTORY_USERNAME</username>
-      <password>$ARTIFACTORY_PASSWORD</password>
+      <id>release-candidate.repository</id>
+      <username>ARTIFACTORY_USERNAME</username>
+      <password>ARTIFACTORY_PASSWORD</password>
     </server>
     <server>
       <id>smarsh-artifactory</id>
-      <username>$ARTIFACTORY_USERNAME</username>
-      <password>$ARTIFACTORY_PASSWORD</password>
+      <username>ARTIFACTORY_USERNAME</username>
+      <password>ARTIFACTORY_PASSWORD</password>
     </server>
   </servers>
   <mirrors>
@@ -33,7 +33,7 @@
       <repositories>
        <repository>
            <id>releases.repository</id>
-           <name>Archiva Managed Internal Repository</name>
+           <name>Smarsh Releases Artifact Virtual Repo</name>
            <url>https://smarsh.jfrog.io/smarsh/libs-release/</url>
            <releases>
                <enabled>true</enabled>
@@ -43,14 +43,14 @@
            </snapshots>
        </repository>
        <repository>
-           <id>snapshots.repository</id>
-           <name>Archiva Managed Snapshots Repository</name>
-           <url>https://smarsh.jfrog.io/smarsh/libs-snapshot/</url>
+           <id>release-candidate.repository</id>
+           <name>Smarsh Release-Candidate Artifact Virtual Repo</name>
+           <url>https://smarsh.jfrog.io/smarsh/libs-rc/</url>
            <releases>
-               <enabled>false</enabled>
+               <enabled>true</enabled>
            </releases>
            <snapshots>
-               <enabled>true</enabled>
+               <enabled>false</enabled>
            </snapshots>
        </repository>
       </repositories>
