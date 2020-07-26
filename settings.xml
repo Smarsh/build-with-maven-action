@@ -45,7 +45,7 @@
           <name>Smarsh Snapshot Artifact Virtual Repo</name>
           <url>https://smarsh.jfrog.io/smarsh/libs-snapshot</url>
             <releases>
-              <enabled>true</enabled>
+              <enabled>false</enabled>
               <updatePolicy>always</updatePolicy>
             </releases>
             <snapshots>
@@ -89,7 +89,7 @@
           <name>Smarsh Snapshot Artifact Virtual Repo</name>
           <url>https://smarsh.jfrog.io/smarsh/libs-snapshot</url>
             <releases>
-              <enabled>true</enabled>
+              <enabled>false</enabled>
               <updatePolicy>always</updatePolicy>
             </releases>
             <snapshots>
