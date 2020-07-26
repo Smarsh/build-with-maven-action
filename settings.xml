@@ -26,40 +26,93 @@
   <mirrors>
   </mirrors>
   <profiles>
-    <profile>
-      <activation>
-       <activeByDefault>true</activeByDefault>
-      </activation>
-      <repositories>
-       <repository>
-           <id>releases.repository</id>
-           <name>Smarsh Releases Artifact Virtual Repo</name>
-           <url>https://smarsh.jfrog.io/smarsh/libs-release/</url>
-           <releases>
-               <enabled>true</enabled>
-           </releases>
-           <snapshots>
-               <enabled>false</enabled>
-           </snapshots>
-       </repository>
-       <repository>
-           <id>release-candidate.repository</id>
-           <name>Smarsh Release-Candidate Artifact Virtual Repo</name>
-           <url>https://smarsh.jfrog.io/smarsh/libs-rc/</url>
-           <releases>
-               <enabled>true</enabled>
-           </releases>
-           <snapshots>
-               <enabled>false</enabled>
-           </snapshots>
-       </repository>
-      </repositories>
-      <pluginRepositories>
-         <pluginRepository>
-             <id>smarsh-artifactory</id>
-             <url>https://smarsh.jfrog.io/smarsh/libs-release</url>
-         </pluginRepository>
-      </pluginRepositories>
-    </profile>
+		<profile><!-- Smarsh BEGIN -->
+			<id>release</id>
+			<repositories>
+				<repository>
+					<id>releases.repository</id>
+					<name>Smarsh Releases Artifact Virtual Repo</name>
+					<url>https://smarsh.jfrog.io/smarsh/libs-release</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+        <repository>
+          <id>smarsh-artifactory</id>
+          <name>Smarsh Snapshot Artifact Virtual Repo</name>
+          <url>https://smarsh.jfrog.io/smarsh/libs-snapshot</url>
+            <releases>
+              <enabled>false</enabled>
+              <updatePolicy>always</updatePolicy>
+            </releases>
+            <snapshots>
+              <enabled>true</enabled>
+            </snapshots>
+        </repository>
+			</repositories>
+
+			<pluginRepositories>
+				<pluginRepository>
+					<id>smarsh-artifactory</id>
+					<name>Smarsh Releases Artifact Virtual Repo</name>
+					<url>https://smarsh.jfrog.io/smarsh/libs-release</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+
+		</profile>
+
+		<profile>
+			<id>rc-release</id>
+			<repositories>
+				<repository>
+					<id>release-candidate.repository</id>
+					<name>Smarsh Release-Candidate Artifact Virtual Repo</name>
+					<url>https://smarsh.jfrog.io/smarsh/libs-rc</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+        <repository>
+          <id>smarsh-artifactory</id>
+          <name>Smarsh Snapshot Artifact Virtual Repo</name>
+          <url>https://smarsh.jfrog.io/smarsh/libs-snapshot</url>
+            <releases>
+              <enabled>false</enabled>
+              <updatePolicy>always</updatePolicy>
+            </releases>
+            <snapshots>
+              <enabled>true</enabled>
+            </snapshots>
+        </repository>
+			</repositories>
+
+			<pluginRepositories>
+				<pluginRepository>
+					<id>smarsh-artifactory</id>
+					<name>Smarsh Releases Artifact Virtual Repo</name>
+					<url>https://smarsh.jfrog.io/smarsh/libs-release</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+
+		</profile>
+		<!-- Smarsh END -->
   </profiles>
 </settings>
